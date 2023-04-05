@@ -1,7 +1,17 @@
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
+import classNames from "classnames"
+import Paper from "./components/Paper"
+import Hero from "./components/Hero"
 
 export default function Home() {
-  return <main className={inter.className}></main>
+  const mainClass = classNames(
+    'mx-auto',
+    'w-[50rem]'
+  )
+  return (
+    <main className={mainClass}>
+      <Hero />
+      <Paper />
+      <Paper />
+    </main>
+  )
 }

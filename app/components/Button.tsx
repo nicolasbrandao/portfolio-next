@@ -7,6 +7,10 @@ type Props = {
 
 export default function Button({ href, children }: Props) {
   const buttonClass = classNames(
+    'flex',
+    'items-center',
+    'gap-2',
+    'w-fit',
     'rounded',
     'border',
     'p-2',

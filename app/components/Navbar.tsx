@@ -9,10 +9,11 @@ export default function Navbar() {
     'justify-between',
     'items-center',
     'p-4',
-    'sticky',
+    'fixed',
     'top-0',
     'z-10',
-    'border'
+    'w-full',
+    'backdrop-blur',
   )
 
   const navbarListClass = classNames('list-none', 'flex', 'gap-4')
