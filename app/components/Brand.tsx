@@ -2,8 +2,8 @@ import classNames from 'classnames'
 
 export default function Brand() {
   const brandClass = classNames(
-    'font-bold', 
-    'text-4xl', 
+    'font-bold',
+    'text-4xl',
     'before:content-["<"]',
     'before:text-green',
     'before:text-4xl',
@@ -13,5 +13,9 @@ export default function Brand() {
     'cursor-pointer'
   )
 
-  return <a href='/' className={brandClass}>NB</a>
+  return (
+    <a href="/" className={brandClass}>
+      NB
+    </a>
+  )
 }

@@ -13,17 +13,24 @@ export default function Navbar() {
     'top-0',
     'z-10',
     'w-full',
-    'backdrop-blur',
+    'backdrop-blur'
   )
 
-  const navbarListClass = classNames('list-none', 'flex', 'gap-4')
+  const navbarListClass = classNames(
+    'list-none',
+    'flex',
+    'gap-4',
+    'items-center'
+  )
   const navbarListItemClass = classNames('cursor-pointer', 'hover:text-green')
 
   return (
     <nav className={navbarClass}>
       <Brand />
       <ul className={navbarListClass}>
-        <li className={navbarListItemClass}><ThemeIcon /></li>
+        <li className={navbarListItemClass}>
+          <ThemeIcon />
+        </li>
         <li className={navbarListItemClass}>Home</li>
         <li className={navbarListItemClass}>Sobre mim</li>
         <li className={navbarListItemClass}>Skills</li>

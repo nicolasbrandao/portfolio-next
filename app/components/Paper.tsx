@@ -1,17 +1,13 @@
-import { PropsWithChildren } from "react"
-import classNames from "classnames"
+import { PropsWithChildren } from 'react'
+import classNames from 'classnames'
 
-
-export default function Paper({children}: PropsWithChildren) {
+export default function Paper({ children }: PropsWithChildren) {
   const paperClass = classNames(
     'flex',
-    'items-center',
+    'flex-col',
     'min-h-screen',
-    'pt-20'
+    'pt-20',
+    'border'
   )
-  return (
-    <section className={paperClass}>
-      {children}
-    </section>
-  )
+  return <section className={paperClass}>{children}</section>
 }
