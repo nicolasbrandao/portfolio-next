@@ -7,7 +7,13 @@ import { Ubuntu_Mono } from 'next/font/google'
 const ubuntuMono = Ubuntu_Mono({ weight: '400', subsets: ['latin'] })
 
 export default function Hero() {
-  const heroContainerClass = classNames('flex', 'flex-col', 'gap-10','min-h-full', 'my-auto')
+  const heroContainerClass = classNames(
+    'flex',
+    'flex-col',
+    'gap-10',
+    'min-h-full',
+    'my-auto'
+  )
 
   const greetingClass = classNames(
     'text-2xl',

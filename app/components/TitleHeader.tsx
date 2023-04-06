@@ -11,7 +11,7 @@ export default function TitleHeader({ children }: PropsWithChildren) {
     'top-0',
     'justify-between',
     'items-center',
-    'w-full',
+    'w-full'
   )
   const titleClass = classNames(
     'text-2xl',
