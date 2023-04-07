@@ -23,7 +23,7 @@ export default function Skills() {
   return (
     <Paper>
       <div className={wrapperClass}>
-        <TitleHeader>SKills</TitleHeader>
+        <TitleHeader>Skills</TitleHeader>
         <Paragraph>
           Estas são as principais tecnologias com que tenho trabalhado.
           Atualmente, meu foco principal é React com Redux, Next e TypeScript
