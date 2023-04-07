@@ -1,5 +1,5 @@
-import Paper from "./Paper"
-import TitleHeader from "./TitleHeader"
+import Paper from './Paper'
+import TitleHeader from './TitleHeader'
 
 export default function Contact() {
   return (

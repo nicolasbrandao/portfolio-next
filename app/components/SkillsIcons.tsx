@@ -33,10 +33,7 @@ export default function SkillsIcons() {
     <SiPython name="SiPython" />,
     <SiDjango name="SiDjango" />,
   ]
-  const containerClass = classNames(
-    'flex',
-    'flex-wrap',
-  )
+  const containerClass = classNames('flex', 'flex-wrap')
 
   const skillCardClass = classNames(
     'flex',
@@ -47,16 +44,12 @@ export default function SkillsIcons() {
     'w-full',
     'my-[1rem]',
     'sm:w-1/2',
-    'md:w-1/3',
-  );
-
-  const iconClass = classNames(
-    'text-8xl',
+    'md:w-1/3'
   )
 
-  const titleClass = classNames(
-    ubuntuMono.className
-  )
+  const iconClass = classNames('text-8xl')
+
+  const titleClass = classNames(ubuntuMono.className)
 
   return (
     <div className={containerClass}>
@@ -65,9 +58,7 @@ export default function SkillsIcons() {
         const iconTitle = icons.find((icon) => icon.id === iconName)?.title
         return (
           <div key={iconName} className={skillCardClass}>
-            <div className={iconClass}>
-              {item}
-            </div>
+            <div className={iconClass}>{item}</div>
             <p className={titleClass}>{iconTitle}</p>
           </div>
         )

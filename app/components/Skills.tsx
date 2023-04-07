@@ -6,8 +6,6 @@ import Paragraph from './Paragraph'
 import SkillsIcons from './SkillsIcons'
 import Button from './Button'
 
-
-
 export default function Skills() {
   const wrapperClass = classNames(
     'flex',
@@ -17,9 +15,7 @@ export default function Skills() {
     'grow'
   )
 
-  const bodyContainerClass = classNames(
-    'mb-[4rem]'
-  )
+  const bodyContainerClass = classNames('mb-[4rem]')
   return (
     <Paper>
       <div className={wrapperClass}>
