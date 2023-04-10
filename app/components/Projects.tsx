@@ -5,11 +5,7 @@ import TitleHeader from './TitleHeader'
 import ProjectContainer from './ProjectContainer'
 
 export default function Projects() {
-  const projectsListContainerClass = classNames(
-    'flex',
-    'flex-col',
-    'my-auto'
-  )
+  const projectsListContainerClass = classNames('flex', 'flex-col', 'my-auto')
   return (
     <Paper>
       <TitleHeader>Projetos</TitleHeader>

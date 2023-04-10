@@ -6,8 +6,7 @@ export default function Paper({ children }: PropsWithChildren) {
     'flex',
     'flex-col',
     'min-h-screen',
-    'pt-20',
-    'border'
+    'pt-20'
   )
   return <section className={paperClass}>{children}</section>
 }

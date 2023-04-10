@@ -9,6 +9,6 @@ export const projectsData = [
     title: 'GamerShelf',
     description:
       'Projeto de uma página que utiliza a Free-to-play API para criar um web app onde o usuário pode construir uma biblioteca de jogos',
-    technologies: 'React Redux RTKQuery ReactRouter TypeScript',
+    technologies: 'React Redux RTKQuery ReactRouter TypeScript Tailwind',
   },
 ]
