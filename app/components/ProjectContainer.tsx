@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import classNames from 'classnames'
 import ProjectCard from './ProjectCard'
+import { projectsData } from '../constants/projectsData'
 
 export default function ProjectContainer(project: Project) {
   const containerClass = classNames(
@@ -13,7 +14,9 @@ export default function ProjectContainer(project: Project) {
   return (
     <div className={containerClass}>
       <Image src={project.image} alt={project.title} height={350} />
-      <ProjectCard {...project} />
+      {projectsData.map((project) => {
+        return <ProjectCard {...project} />
+      })}
     </div>
   )
 }

@@ -1,9 +1,9 @@
-import GamerShelf from '../../public/projects/gamer-shelf.png'
+import GamerShelfThumbnail from '../../public/projects/gamer-shelf.png'
 
 export const projectsData = [
   {
     id: 'gamer-shelf',
-    image: GamerShelf,
+    image: GamerShelfThumbnail,
     repoURL: 'https://github.com/nicolasbrandao/gamer-shelf',
     deployURL: 'https://gamer-shelf.vercel.app/',
     title: 'GamerShelf',
