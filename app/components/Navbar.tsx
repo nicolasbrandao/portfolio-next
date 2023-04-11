@@ -8,18 +8,20 @@ import Brand from './Brand'
 import ThemeIcon from './ThemeIcon'
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(window.innerWidth >= 768)
+  const [isOpen, setIsOpen] = useState(false)
 
   useEffect(() => {
     const handleWindowResize = () => {
       setIsOpen(window.innerWidth >= 768)
     }
 
+    setIsOpen(window.innerWidth >= 768)
+
     window.addEventListener('resize', handleWindowResize)
     return () => {
       window.removeEventListener('resize', handleWindowResize)
     }
-  }, [isOpen])
+  }, [])
 
   const handleClick = () => {
     setIsOpen((prev) => !prev)
@@ -51,7 +53,9 @@ export default function Navbar() {
     'gap-4',
     'items-end',
     'md:items-center',
-    isOpen ? 'flex flex-col md:flex-row' : 'hidden'
+    'md:flex',
+    'md:flex-row',
+    isOpen ? 'flex flex-col' : 'hidden'
   )
 
   const navbarListItemClass = classNames('cursor-pointer', 'hover:text-green')
