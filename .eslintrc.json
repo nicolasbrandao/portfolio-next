@@ -6,13 +6,10 @@
   },
   "extends": [
     "next/core-web-vitals",
+    "plugin:@next/next/recommended",
     "airbnb",
-    "plugin:@typescript-eslint/recommended",
-    "prettier",
-    "prettier/@typescript-eslint",
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "plugin:react-hooks/recommended"
+    "airbnb/hooks",
+    "prettier"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -30,6 +27,11 @@
   ],
   "rules": {
     "prettier/prettier": "error",
-    "react/prop-types": "off"
+    "react/prop-types": "off",
+    "react/react-in-jsx-scope": "off",
+    "import/extensions": "off",
+    "camelcase": "off",
+    "react/jsx-filename-extension": "off",
+    "no-console": "off"
   }
 }
