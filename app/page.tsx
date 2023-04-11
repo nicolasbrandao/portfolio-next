@@ -6,7 +6,13 @@ import Projects from './components/Projects'
 import Contact from './components/Contact'
 
 export default function Home() {
-  const mainClass = classNames('mx-auto', 'w-[50rem]', 'border')
+  const mainClass = classNames(
+    'mx-auto',
+    'w-[22rem]',
+    'md:w-[45rem]',
+    'xl:w-[50rem]',
+    'border'
+  )
   return (
     <main className={mainClass}>
       <Hero />
