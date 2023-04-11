@@ -15,10 +15,11 @@ export default function ProjectCard({ project }: ProjectProp) {
     'bg-bcg2',
     'rounded-lg',
     'h-[400px]',
-    'w-[250px]',
+    'w-full',
+    'md:w-[250px]',
     'p-4',
-    'absolute',
-    'right-0'
+    'md:absolute',
+    'md:right-0'
   )
 
   const headerClass = classNames('flex', 'flex-col')

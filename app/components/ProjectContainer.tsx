@@ -12,9 +12,16 @@ export default function ProjectContainer({ project }: ProjectProp) {
     'relative'
   )
 
+  const projectImageClass = classNames('hidden', 'md:block')
+
   return (
     <div className={containerClass}>
-      <Image src={project.image} alt={project.title} height={350} />
+      <Image
+        src={project.image}
+        alt={project.title}
+        height={350}
+        className={projectImageClass}
+      />
       {projectsData.map((item) => (
         <ProjectCard key={item.id} project={item} />
       ))}

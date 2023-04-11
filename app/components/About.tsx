@@ -18,6 +18,9 @@ export default function About() {
 
   const bodyClass = classNames(
     'flex',
+    'flex-col-reverse',
+    'md:mt-0',
+    'md:flex-row',
     'items-center',
     'justify-center',
     'gap-4',

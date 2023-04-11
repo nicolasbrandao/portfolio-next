@@ -41,10 +41,10 @@ export default function SkillsIcons() {
     'justify-center',
     'items-center',
     'text-green',
-    'w-full',
     'my-[1rem]',
-    'sm:w-1/2',
-    'md:w-1/3'
+    'w-1/2',
+    'md:w-1/3',
+    'xl:w-1/4'
   )
 
   const iconClass = classNames('text-8xl')

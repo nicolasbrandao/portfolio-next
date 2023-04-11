@@ -30,6 +30,8 @@ export default function Footer() {
 
   const footerContainerClass = classNames(
     'flex',
+    'flex-col',
+    'md:flex-row',
     'mx-auto',
     'max-w-[50rem]',
     'h-[10rem]',

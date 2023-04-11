@@ -22,7 +22,9 @@ export default function Hero() {
   )
 
   const myNameClass = classNames(
-    'text-[5rem]',
+    'text-[2rem]',
+    'md:text-[4rem]',
+    'xl:text-[5rem]',
     'font-bold',
     'before:content-["<"]',
     'before:text-green',
@@ -30,12 +32,17 @@ export default function Hero() {
     'after:text-green'
   )
 
-  const titleClass = classNames('text-5xl', 'text-frg2', 'font-bold')
+  const titleClass = classNames(
+    'text-3xl',
+    'md:text-5xl',
+    'text-frg2',
+    'font-bold'
+  )
 
   const iconClass = classNames('text-3xl')
 
   return (
-    <Paper id="hero">
+    <Paper>
       <div className={heroContainerClass}>
         <p className={greetingClass}>Olá, meu nome é</p>
         <p className={myNameClass}>Nícolas Brandão</p>

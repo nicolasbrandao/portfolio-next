@@ -10,8 +10,7 @@ export default function Home() {
     'mx-auto',
     'w-[22rem]',
     'md:w-[45rem]',
-    'xl:w-[50rem]',
-    'border'
+    'xl:w-[50rem]'
   )
   return (
     <main className={mainClass}>

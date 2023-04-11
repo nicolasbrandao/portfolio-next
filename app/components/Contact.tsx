@@ -46,7 +46,8 @@ export default function Contact() {
   const formClass = classNames(
     'flex',
     'flex-col',
-    'w-3/4',
+    'w-full',
+    'md:w-3/4',
     'bg-bcg2',
     'p-4',
     'rounded'
