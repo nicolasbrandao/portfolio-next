@@ -99,7 +99,7 @@ export default function Contact() {
   const contactIconClass = classNames('text-green', 'text-xl')
 
   return (
-    <Paper>
+    <Paper id="contact">
       <TitleHeader>Contato</TitleHeader>
       <div className={contactContainerClass}>
         <form ref={form} onSubmit={sendEmail} className={formClass}>

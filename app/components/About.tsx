@@ -30,7 +30,7 @@ export default function About() {
   const imageContainerClass = classNames('rounded-full', 'overflow-hidden')
 
   return (
-    <Paper>
+    <Paper id="about">
       <div className={wrapperClass}>
         <TitleHeader>Sobre mim</TitleHeader>
         <div className={bodyClass}>

@@ -1,7 +1,16 @@
-import { PropsWithChildren } from 'react'
+import React, { ReactNode } from 'react'
 import classNames from 'classnames'
 
-export default function Paper({ children }: PropsWithChildren) {
+type PaperProps = {
+  children: ReactNode
+  id?: string
+}
+
+export default function Paper({ children, id }: PaperProps) {
   const paperClass = classNames('flex', 'flex-col', 'min-h-screen', 'pt-20')
-  return <section className={paperClass}>{children}</section>
+  return (
+    <section id={id} className={paperClass}>
+      {children}
+    </section>
+  )
 }

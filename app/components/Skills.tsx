@@ -17,7 +17,7 @@ export default function Skills() {
 
   const bodyContainerClass = classNames('mb-[4rem]')
   return (
-    <Paper>
+    <Paper id="skills">
       <div className={wrapperClass}>
         <TitleHeader>Skills</TitleHeader>
         <Paragraph>

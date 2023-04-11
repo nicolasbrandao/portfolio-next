@@ -31,11 +31,21 @@ export default function Navbar() {
         <li className={navbarListItemClass}>
           <ThemeIcon />
         </li>
-        <li className={navbarListItemClass}>Home</li>
-        <li className={navbarListItemClass}>Sobre mim</li>
-        <li className={navbarListItemClass}>Skills</li>
-        <li className={navbarListItemClass}>Projetos</li>
-        <li className={navbarListItemClass}>Contato</li>
+        <li className={navbarListItemClass}>
+          <a href="#home">Home</a>
+        </li>
+        <li className={navbarListItemClass}>
+          <a href="#about">Sobre mim</a>
+        </li>
+        <li className={navbarListItemClass}>
+          <a href="#skills">Skills</a>
+        </li>
+        <li className={navbarListItemClass}>
+          <a href="#projects">Projetos</a>
+        </li>
+        <li className={navbarListItemClass}>
+          <a href="#contact">Contato</a>
+        </li>
         <li className={navbarListItemClass}>
           <Button href="#">Currículo</Button>
         </li>

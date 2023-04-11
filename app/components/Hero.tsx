@@ -35,7 +35,7 @@ export default function Hero() {
   const iconClass = classNames('text-3xl')
 
   return (
-    <Paper>
+    <Paper id="hero">
       <div className={heroContainerClass}>
         <p className={greetingClass}>Olá, meu nome é</p>
         <p className={myNameClass}>Nícolas Brandão</p>

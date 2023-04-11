@@ -8,7 +8,7 @@ import ProjectContainer from './ProjectContainer'
 export default function Projects() {
   const projectsListContainerClass = classNames('flex', 'flex-col', 'my-auto')
   return (
-    <Paper>
+    <Paper id="projects">
       <TitleHeader>Projetos</TitleHeader>
       <div className={projectsListContainerClass}>
         {projectsData.map((project: Project) => (

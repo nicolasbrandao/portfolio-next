@@ -32,6 +32,7 @@
     "import/extensions": "off",
     "camelcase": "off",
     "react/jsx-filename-extension": "off",
-    "no-console": "off"
+    "no-console": "off",
+    "react/require-default-props": "off"
   }
 }
