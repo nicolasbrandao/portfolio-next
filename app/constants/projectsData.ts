@@ -19,7 +19,8 @@ const projectsData: Project[] = [
     repoURL: 'https://github.com/nicolasbrandao/portfolio-next',
     deployURL: 'https://nicolasbrandao.vercel.app/',
     title: 'Portfólio',
-    description: 'Projeto de uma página de portfólio pessoal',
+    description:
+      'Projeto de uma página de portfólio pessoal para exposição de projetos e currículo',
     technologies: 'React Next TypeScript Tailwind',
   },
 ]
