@@ -8,12 +8,13 @@ import Brand from './Brand'
 import ThemeIcon from './ThemeIcon'
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(true)
+  const [isOpen, setIsOpen] = useState(window.innerWidth >= 768)
 
   useEffect(() => {
     const handleWindowResize = () => {
       setIsOpen(window.innerWidth >= 768)
     }
+
     window.addEventListener('resize', handleWindowResize)
     return () => {
       window.removeEventListener('resize', handleWindowResize)
