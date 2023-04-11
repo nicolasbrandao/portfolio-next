@@ -66,7 +66,12 @@ export default function Contact() {
     showAlert ? 'block' : 'hidden'
   )
 
-  const headingLineCLas = classNames('text-frg2', 'font-bold', 'text-2xl', 'mb-4')
+  const headingLineCLas = classNames(
+    'text-frg2',
+    'font-bold',
+    'text-2xl',
+    'mb-4'
+  )
 
   const textInputsClass = classNames(
     'text-bcg1',
@@ -89,14 +94,9 @@ export default function Contact() {
     'hover:bg-green/[.06]'
   )
 
-  const contactLineClass = classNames(
-'flex','items-center', 'gap-2'
-  )
+  const contactLineClass = classNames('flex', 'items-center', 'gap-2')
 
-  const contactIconClass = classNames(
-    'text-green',
-    'text-xl'
-  )
+  const contactIconClass = classNames('text-green', 'text-xl')
 
   return (
     <Paper>
@@ -130,7 +130,12 @@ export default function Contact() {
           <label htmlFor="message">
             Mensagem
             <br />
-            <textarea id="message" name="message" rows={5} className={textInputsClass} />
+            <textarea
+              id="message"
+              name="message"
+              rows={5}
+              className={textInputsClass}
+            />
           </label>
           <button type="submit" value="Enviar" className={buttonClass}>
             Enviar
@@ -140,15 +145,15 @@ export default function Contact() {
         <div>
           <h3 className={headingLineCLas}>Ou faça contato direto</h3>
           <p className={contactLineClass}>
-            <HiOutlineMail className={contactIconClass}/>
+            <HiOutlineMail className={contactIconClass} />
             nicolas.brandaor@gmail.com
           </p>
           <p className={contactLineClass}>
-            <FaWhatsapp className={contactIconClass}/>
+            <FaWhatsapp className={contactIconClass} />
             +55 37 9 9112 4140
           </p>
           <p className={contactLineClass}>
-            <FaLinkedinIn className={contactIconClass}/>
+            <FaLinkedinIn className={contactIconClass} />
             in/nicolasbradao
           </p>
         </div>
