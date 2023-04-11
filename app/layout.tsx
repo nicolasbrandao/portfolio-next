@@ -1,8 +1,9 @@
 import './globals.css'
 import classNames from 'classnames'
+import { Inter } from 'next/font/google'
+import { ReactNode } from 'react'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
-import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -11,11 +12,7 @@ export const metadata = {
   description: 'Página de portfólio pessoal de Nícolas Brandão',
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   const bodyClass = classNames('bg-bcg1', 'text-frg1')
 
   return (

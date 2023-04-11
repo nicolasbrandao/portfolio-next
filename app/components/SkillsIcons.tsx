@@ -13,8 +13,8 @@ import {
   SiPython,
   SiDjango,
 } from 'react-icons/si'
-import { icons } from '../constants/skillsIcons'
 import { Ubuntu_Mono } from 'next/font/google'
+import icons from '../constants/skillsIcons'
 
 const ubuntuMono = Ubuntu_Mono({ weight: '400', subsets: ['latin'] })
 

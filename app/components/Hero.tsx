@@ -1,8 +1,8 @@
 import classNames from 'classnames'
 import { MdOutlineFileDownload } from 'react-icons/md'
+import { Ubuntu_Mono } from 'next/font/google'
 import Paper from './Paper'
 import Button from './Button'
-import { Ubuntu_Mono } from 'next/font/google'
 
 const ubuntuMono = Ubuntu_Mono({ weight: '400', subsets: ['latin'] })
 

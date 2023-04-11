@@ -1,11 +1,11 @@
 import classNames from 'classnames'
 import Image from 'next/image'
+import { FiExternalLink } from 'react-icons/fi'
 import profilePicture from '../../public/profile_picture.png'
 import Paper from './Paper'
 import TitleHeader from './TitleHeader'
 import Button from './Button'
 import Paragraph from './Paragraph'
-import { FiExternalLink } from 'react-icons/fi'
 
 export default function About() {
   const wrapperClass = classNames(

@@ -3,11 +3,11 @@ import { HiOutlineFolder } from 'react-icons/hi'
 import { SiGithub } from 'react-icons/si'
 import { FiExternalLink } from 'react-icons/fi'
 import { Ubuntu_Mono } from 'next/font/google'
+import { ProjectProp } from '@/types'
 
 const ubuntuMono = Ubuntu_Mono({ weight: '400', subsets: ['latin'] })
 
-export default function ProjectCard(project: Project) {
-
+export default function ProjectCard({ project }: ProjectProp) {
   const containerClass = classNames(
     'flex',
     'flex-col',
@@ -44,10 +44,14 @@ export default function ProjectCard(project: Project) {
         <div className={headerIconsClass}>
           <HiOutlineFolder className={folderIcon} />
           <div className={externalIconsClass}>
-            <a href={project.repoURL} target='_blank' rel="noopener noreferrer">
+            <a href={project.repoURL} target="_blank" rel="noopener noreferrer">
               <SiGithub />
             </a>
-            <a href={project.deployURL} target='_blank' rel="noopener noreferrer">
+            <a
+              href={project.deployURL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FiExternalLink />
             </a>
           </div>

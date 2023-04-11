@@ -3,31 +3,30 @@
 import classNames from 'classnames'
 import { AiOutlineStar } from 'react-icons/ai'
 import { BiGitRepoForked } from 'react-icons/bi'
-import Brand from './Brand'
 import { Ubuntu_Mono } from 'next/font/google'
 import { useEffect, useState } from 'react'
+import Brand from './Brand'
 import getGithubStats from '../lib/getGithubStats'
 
 const ubuntuMono = Ubuntu_Mono({ weight: '400', subsets: ['latin'] })
 
 export default function Footer() {
-  const [stargazers_count, setStargazersCount] = useState(0);
-  const [forks_count, setForksCount] = useState(0);
+  const [stargazersCount, setStargazersCount] = useState(0)
+  const [forksCount, setForksCount] = useState(0)
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const { stargazers_count, forks_count } = await getGithubStats();
-        setStargazersCount(stargazers_count);
-        setForksCount(forks_count);
+        const { stargazers_count, forks_count } = await getGithubStats()
+        setStargazersCount(stargazers_count)
+        setForksCount(forks_count)
       } catch (error) {
-        console.error('Failed to fetch GitHub stats:', error);
+        console.error('Failed to fetch GitHub stats:', error)
       }
-    };
-  
-    fetchData();
+    }
+
+    fetchData()
   }, [])
-  
 
   const footerContainerClass = classNames(
     'flex',
@@ -39,9 +38,7 @@ export default function Footer() {
     'gap-4'
   )
 
-  const footerInfoContainerClass = classNames(
-    ubuntuMono.className
-  )
+  const footerInfoContainerClass = classNames(ubuntuMono.className)
 
   const statsWrapperClass = classNames(
     'flex',
@@ -50,11 +47,7 @@ export default function Footer() {
     'justify-center'
   )
 
-  const statsContainerClass = classNames(
-    'flex',
-    'gap-2',
-    'items-center'
-  )
+  const statsContainerClass = classNames('flex', 'gap-2', 'items-center')
 
   return (
     <footer className={footerContainerClass}>
@@ -63,12 +56,12 @@ export default function Footer() {
         <p>Projetado & Desenvolvido por Nícolas Brandão</p>
         <div className={statsWrapperClass}>
           <div className={statsContainerClass}>
-            <AiOutlineStar aria-label="Github Stars Counter Icon"/>
-            <p>{stargazers_count}</p>
+            <AiOutlineStar aria-label="Github Stars Counter Icon" />
+            <p>{stargazersCount}</p>
           </div>
           <div className={statsContainerClass}>
-            <BiGitRepoForked aria-label="Github Forks Counter Icon"/>
-            <p>{forks_count}</p>
+            <BiGitRepoForked aria-label="Github Forks Counter Icon" />
+            <p>{forksCount}</p>
           </div>
         </div>
       </div>

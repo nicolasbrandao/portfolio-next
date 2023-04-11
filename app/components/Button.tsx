@@ -1,8 +1,9 @@
 import classNames from 'classnames'
+import { ReactNode } from 'react'
 
 type Props = {
   href: string
-  children: React.ReactNode
+  children: ReactNode
 }
 
 export default function Button({ href, children }: Props) {

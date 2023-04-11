@@ -5,7 +5,11 @@ type StaticImageData = {
   placeholder?: string;
 };
 
-type Project = {
+export type ProjectProp = {
+  project: Project
+}
+
+export type Project = {
   id: string;
   image: StaticImageData;
   repoURL: string;

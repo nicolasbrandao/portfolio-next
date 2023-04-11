@@ -1,4 +1,4 @@
-export const icons = [
+const icons = [
   { id: 'SiReact', title: 'React' },
   { id: 'SiRedux', title: 'Redux' },
   { id: 'SiStyledcomponents', title: 'Styled-components' },
@@ -12,3 +12,5 @@ export const icons = [
   { id: 'SiPython', title: 'Python' },
   { id: 'SiDjango', title: 'Django' },
 ]
+
+export default icons

@@ -1,6 +1,6 @@
 'use client'
 
-import { useRef } from 'react'
+import { FormEvent, useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import classNames from 'classnames'
 import Paper from './Paper'
@@ -10,7 +10,7 @@ import Paragraph from './Paragraph'
 export default function Contact() {
   const form = useRef<any>(null)
 
-  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+  const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
 
     emailjs
@@ -23,7 +23,7 @@ export default function Contact() {
       .then(
         (result) => {
           console.log(result.text)
-          form.current.reset
+          form.current.reset()
         },
         (error) => {
           console.log(error.text)
@@ -44,12 +44,30 @@ export default function Contact() {
       <TitleHeader>Contato</TitleHeader>
       <div className={contactContainerClass}>
         <form ref={form} onSubmit={sendEmail} className={formClass}>
-          <label>Nome</label>
-          <input type="text" name="from_name" className={textInputsClass} />
-          <label>Seu e-mail</label>
-          <input type="email" name="email" className={textInputsClass} />
-          <label>Mensagem</label>
-          <textarea name="message" className={textInputsClass} />
+          <label htmlFor="name">
+            Nome
+            <input
+              id="name"
+              type="text"
+              name="from_name"
+              className={textInputsClass}
+            />
+          </label>
+
+          <label htmlFor="email">
+            Seu e-mail
+            <input
+              id="email"
+              type="email"
+              name="email"
+              className={textInputsClass}
+            />
+          </label>
+
+          <label htmlFor="message">
+            Mensagem
+            <textarea id="message" name="message" className={textInputsClass} />
+          </label>
           <input type="submit" value="Enviar" className={buttonClass} />
         </form>
         <div>

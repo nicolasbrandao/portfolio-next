@@ -1,6 +1,7 @@
+import { Project } from '@/types'
 import GamerShelfThumbnail from '../../public/projects/gamer-shelf.png'
 
-export const projectsData = [
+const projectsData: Project[] = [
   {
     id: 'gamer-shelf',
     image: GamerShelfThumbnail,
@@ -12,3 +13,5 @@ export const projectsData = [
     technologies: 'React Redux RTKQuery ReactRouter TypeScript Tailwind',
   },
 ]
+
+export default projectsData
