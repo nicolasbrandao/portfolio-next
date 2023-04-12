@@ -41,7 +41,10 @@ export default function Footer() {
     'gap-4'
   )
 
-  const footerInfoContainerClass = classNames('hover:text-green', ubuntuMono.className)
+  const footerInfoContainerClass = classNames(
+    'hover:text-green',
+    ubuntuMono.className
+  )
 
   const statsWrapperClass = classNames(
     'flex',
