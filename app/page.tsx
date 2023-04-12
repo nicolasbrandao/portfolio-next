@@ -4,6 +4,7 @@ import About from './components/About'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
+import SidebarContacts from './components/SidebarContacts'
 
 export default function Home() {
   const mainClass = classNames(
@@ -19,6 +20,7 @@ export default function Home() {
       <Skills />
       <Projects />
       <Contact />
+      <SidebarContacts />
     </main>
   )
 }
