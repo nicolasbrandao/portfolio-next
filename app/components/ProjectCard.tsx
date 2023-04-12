@@ -45,14 +45,10 @@ export default function ProjectCard({ project }: ProjectProp) {
         <div className={headerIconsClass}>
           <HiOutlineFolder className={folderIcon} />
           <div className={externalIconsClass}>
-            <a href={project.repoURL} target="_blank" rel="noopener noreferrer">
+            <a href={project.repoURL} target="_blank" rel="noreferrer">
               <SiGithub />
             </a>
-            <a
-              href={project.deployURL}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href={project.deployURL} target="_blank" rel="noreferrer">
               <FiExternalLink />
             </a>
           </div>

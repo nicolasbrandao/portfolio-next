@@ -1,6 +1,7 @@
 import classNames from 'classnames'
 import { MdOutlineFileDownload } from 'react-icons/md'
 import { Ubuntu_Mono } from 'next/font/google'
+import linksURLs from '../constants/hyperlinks'
 import Paper from './Paper'
 import Button from './Button'
 
@@ -52,7 +53,7 @@ export default function Hero() {
           Uso principalmente React, Redux, Next e TypeScript para desenvolver
           boas experiências para o usuário e mantenedores do código
         </p>
-        <Button href="#">
+        <Button href={linksURLs.resume}>
           <span>Download Currículo</span>
           <MdOutlineFileDownload className={iconClass} />
         </Button>

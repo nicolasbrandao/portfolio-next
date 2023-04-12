@@ -1,9 +1,9 @@
 import classNames from 'classnames'
 import { SlSocialLinkedin } from 'react-icons/sl'
-import { BsGithub } from 'react-icons/bs'
-import { HiOutlineMail } from 'react-icons/hi'
+import { BsGithub, BsWhatsapp } from 'react-icons/bs'
+import { FiMail } from 'react-icons/fi'
 import { SiNotion } from 'react-icons/si'
-import { FaWhatsapp } from 'react-icons/fa'
+import linksURLs from '../constants/hyperlinks'
 
 export default function SidebarContacts() {
   const contactsContainerClass = classNames(
@@ -21,7 +21,11 @@ export default function SidebarContacts() {
 
   const contactsListClass = classNames('flex', 'flex-col', 'gap-2')
 
-  const contactsListItemClass = classNames('text-2xl', 'hover:text-green')
+  const contactsListItemClass = classNames(
+    'text-2xl',
+    'text-frg2',
+    'hover:text-green'
+  )
   const contactsLineClass = classNames(
     'border-r',
     'h-72',
@@ -33,20 +37,30 @@ export default function SidebarContacts() {
     <div className={contactsContainerClass}>
       <ul className={contactsListClass}>
         <li className={contactsListItemClass}>
-          <HiOutlineMail />
+          <a href={linksURLs.email} target="_blank" rel="noreferrer">
+            <FiMail />
+          </a>
         </li>
         <li className={contactsListItemClass}>
-          <FaWhatsapp />
+          <a href={linksURLs.whatsapp} target="_blank" rel="noreferrer">
+            <BsWhatsapp />
+          </a>
         </li>
         <li className={contactsListItemClass}>
-          <SlSocialLinkedin />
+          <a href={linksURLs.linkedin} target="_blank" rel="noreferrer">
+            <SlSocialLinkedin />
+          </a>
         </li>
         <li className={contactsListItemClass}>
-          <BsGithub />
+          <a href={linksURLs.github} target="_blank" rel="noreferrer">
+            <BsGithub />
+          </a>
         </li>
 
         <li className={contactsListItemClass}>
-          <SiNotion />
+          <a href={linksURLs.notion} target="_blank" rel="noreferrer">
+            <SiNotion />
+          </a>
         </li>
       </ul>
       <div className={contactsLineClass} />

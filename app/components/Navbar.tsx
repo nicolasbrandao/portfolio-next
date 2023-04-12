@@ -6,6 +6,7 @@ import { useState, useEffect } from 'react'
 import Button from './Button'
 import Brand from './Brand'
 import ThemeIcon from './ThemeIcon'
+import linksURLs from '../constants/hyperlinks'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -87,7 +88,7 @@ export default function Navbar() {
             <a href="#contact">Contato</a>
           </li>
           <li className={navbarListItemClass}>
-            <Button href="#">Currículo</Button>
+            <Button href={linksURLs.resume}>Currículo</Button>
           </li>
         </ul>
       </div>

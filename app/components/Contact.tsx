@@ -8,6 +8,7 @@ import { HiOutlineMail } from 'react-icons/hi'
 import { FaWhatsapp, FaLinkedinIn } from 'react-icons/fa'
 import TitleHeader from './TitleHeader'
 import Paper from './Paper'
+import linksURLs from '../constants/hyperlinks'
 
 export default function Contact() {
   const form = useRef<any>(null)
@@ -116,7 +117,6 @@ export default function Contact() {
               className={textInputsClass}
             />
           </label>
-
           <label htmlFor="email">
             Seu e-mail
             <br />
@@ -127,7 +127,6 @@ export default function Contact() {
               className={textInputsClass}
             />
           </label>
-
           <label htmlFor="message">
             Mensagem
             <br />
@@ -145,18 +144,33 @@ export default function Contact() {
         </form>
         <div>
           <h3 className={headingLineCLas}>Ou faça contato direto</h3>
-          <p className={contactLineClass}>
+          <a
+            href={linksURLs.email}
+            className={contactLineClass}
+            target="_blank"
+            rel="noreferrer"
+          >
             <HiOutlineMail className={contactIconClass} />
             nicolas.brandaor@gmail.com
-          </p>
-          <p className={contactLineClass}>
+          </a>
+          <a
+            href={linksURLs.whatsapp}
+            className={contactLineClass}
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaWhatsapp className={contactIconClass} />
             +55 37 9 9112 4140
-          </p>
-          <p className={contactLineClass}>
+          </a>
+          <a
+            href={linksURLs.linkedin}
+            className={contactLineClass}
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaLinkedinIn className={contactIconClass} />
             in/nicolasbradao
-          </p>
+          </a>
         </div>
       </div>
     </Paper>

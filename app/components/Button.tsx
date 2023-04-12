@@ -20,7 +20,7 @@ export default function Button({ href, children }: Props) {
     'hover:bg-green/[.06]'
   )
   return (
-    <a href={href} className={buttonClass}>
+    <a href={href} className={buttonClass} target="_blank" rel="noreferrer">
       {children}
     </a>
   )

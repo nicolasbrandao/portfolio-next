@@ -6,6 +6,7 @@ import Paper from './Paper'
 import TitleHeader from './TitleHeader'
 import Button from './Button'
 import Paragraph from './Paragraph'
+import linksURLs from '../constants/hyperlinks'
 
 export default function About() {
   const wrapperClass = classNames(
@@ -59,7 +60,7 @@ export default function About() {
               Estou sempre em busca de novos desafios e atualizado em relação às
               novas tecnologias e tendências do mercado
             </Paragraph>
-            <Button href="/">
+            <Button href={linksURLs.linkedin}>
               Acesse meu LinkedIn
               <FiExternalLink />
             </Button>

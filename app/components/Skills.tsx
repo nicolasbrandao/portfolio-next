@@ -5,6 +5,7 @@ import TitleHeader from './TitleHeader'
 import Paragraph from './Paragraph'
 import SkillsIcons from './SkillsIcons'
 import Button from './Button'
+import linksURLs from '../constants/hyperlinks'
 
 export default function Skills() {
   const wrapperClass = classNames(
@@ -26,7 +27,7 @@ export default function Skills() {
         </Paragraph>
         <div className={bodyContainerClass}>
           <SkillsIcons />
-          <Button href="/">
+          <Button href={linksURLs.notion}>
             Acesse meu Notion
             <FiExternalLink />
           </Button>

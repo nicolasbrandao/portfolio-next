@@ -7,6 +7,7 @@ import { Ubuntu_Mono } from 'next/font/google'
 import { useEffect, useState } from 'react'
 import Brand from './Brand'
 import getGithubStats from '../lib/getGithubStats'
+import linksURLs from '../constants/hyperlinks'
 
 const ubuntuMono = Ubuntu_Mono({ weight: '400', subsets: ['latin'] })
 
@@ -40,7 +41,7 @@ export default function Footer() {
     'gap-4'
   )
 
-  const footerInfoContainerClass = classNames(ubuntuMono.className)
+  const footerInfoContainerClass = classNames('hover:text-green', ubuntuMono.className)
 
   const statsWrapperClass = classNames(
     'flex',
@@ -54,7 +55,12 @@ export default function Footer() {
   return (
     <footer className={footerContainerClass}>
       <Brand />
-      <div className={footerInfoContainerClass}>
+      <a
+        href={linksURLs.repo}
+        target="_blank"
+        rel="noreferrer"
+        className={footerInfoContainerClass}
+      >
         <p>Projetado & Desenvolvido por Nícolas Brandão</p>
         <div className={statsWrapperClass}>
           <div className={statsContainerClass}>
@@ -66,7 +72,7 @@ export default function Footer() {
             <p>{forksCount}</p>
           </div>
         </div>
-      </div>
+      </a>
     </footer>
   )
 }
