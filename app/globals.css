@@ -2,6 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root,
+    :root.dark {
+      --background1: 22 22 22;
+      --background2: 37 37 37;
+      --shadow: 16 16 16;
+      --foreground1: 248 248 242;
+      --foreground2: 211 211 211;
+      --blue: 139 233 253;
+      --green: 80 250 123;
+  }
+  :root.light {
+    --background1: 248 248 242;
+    --background2: 214 228 229;
+    --shadow: 242 242 242;
+    --foreground1: 3 0 28;
+    --foreground2: 48 30 103;
+    --blue: 91 143 185;
+    --green: 6 198 54;
+  }
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -15,8 +37,8 @@ body {
   overflow-x: hidden;
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   html {
-    color-scheme: light;
+    color-scheme: dark;
   }
 }

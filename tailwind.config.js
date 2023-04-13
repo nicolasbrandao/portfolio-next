@@ -6,16 +6,16 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    colors: {
+      bcg1: 'rgb(var(--background1) / <alpha-value>)',
+      bcg2: 'rgb(var(--background2) / <alpha-value>)',
+      shadow: 'rgb(var(--shadow) / <alpha-value>)',
+      frg1: 'rgb(var(--foreground1) / <alpha-value>)',
+      frg2: 'rgb(var(--foreground2) / <alpha-value>)',
+      blue: 'rgb(var(--blue) / <alpha-value>)',
+      green: 'rgb(var(--green) / <alpha-value>)',
+    },
     extend: {
-      colors: {
-        'bcg1': '#161616',
-        'bcg2': '#252525',
-        'shadow': '#101010',
-        'frg1': '#f8f8f2',
-        'frg2': 'lightgray',
-        'blue': '#8be9fd',
-        'green': '#50fa7b',
-      },
       keyframes: {
         float: {
           "0%, 100%": { transform: "translateY(0px)" },

@@ -13,10 +13,10 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }: { children: ReactNode }) {
-  const bodyClass = classNames('bg-bcg1', 'text-frg1')
+  const bodyClass = classNames('bg-bcg1', 'text-frg1', inter.className)
 
   return (
-    <html lang="pt-br" className={inter.className}>
+    <html lang="pt-br" className="dark">
       <body className={bodyClass}>
         <Navbar />
         {children}
