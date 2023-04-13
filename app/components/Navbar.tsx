@@ -66,7 +66,14 @@ export default function Navbar() {
     generalTransition
   )
 
-  const mobileMenuIconClass = classNames('text-3xl', 'block', 'md:hidden')
+  const mobileMenuIconClass = classNames(
+    'text-3xl',
+    'block',
+    'md:hidden',
+    'hover:text-green',
+    'cursor-pointer',
+    generalTransition
+  )
 
   return (
     <nav className={navbarClass}>
