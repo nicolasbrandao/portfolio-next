@@ -44,7 +44,8 @@ export default function SkillsIcons() {
     'my-[1rem]',
     'w-1/2',
     'md:w-1/3',
-    'xl:w-1/4'
+    'xl:w-1/4',
+    'hover:animate-float'
   )
 
   const iconClass = classNames('text-8xl')

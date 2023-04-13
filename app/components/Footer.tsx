@@ -8,6 +8,7 @@ import { useEffect, useState } from 'react'
 import Brand from './Brand'
 import getGithubStats from '../lib/getGithubStats'
 import linksURLs from '../constants/hyperlinks'
+import generalTransition from './classnames/classNames'
 
 const ubuntuMono = Ubuntu_Mono({ weight: '400', subsets: ['latin'] })
 
@@ -43,7 +44,8 @@ export default function Footer() {
 
   const footerInfoContainerClass = classNames(
     'hover:text-green',
-    ubuntuMono.className
+    ubuntuMono.className,
+    generalTransition
   )
 
   const statsWrapperClass = classNames(

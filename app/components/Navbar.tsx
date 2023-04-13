@@ -7,6 +7,7 @@ import Button from './Button'
 import Brand from './Brand'
 import ThemeIcon from './ThemeIcon'
 import linksURLs from '../constants/hyperlinks'
+import generalTransition from './classnames/classNames'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -59,7 +60,11 @@ export default function Navbar() {
     isOpen ? 'flex flex-col' : 'hidden'
   )
 
-  const navbarListItemClass = classNames('cursor-pointer', 'hover:text-green')
+  const navbarListItemClass = classNames(
+    'cursor-pointer',
+    'hover:text-green',
+    generalTransition
+  )
 
   const mobileMenuIconClass = classNames('text-3xl', 'block', 'md:hidden')
 

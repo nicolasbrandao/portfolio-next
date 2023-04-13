@@ -9,6 +9,7 @@ import { FaWhatsapp, FaLinkedinIn } from 'react-icons/fa'
 import TitleHeader from './TitleHeader'
 import Paper from './Paper'
 import linksURLs from '../constants/hyperlinks'
+import generalTransition from './classnames/classNames'
 
 export default function Contact() {
   const form = useRef<any>(null)
@@ -93,10 +94,17 @@ export default function Contact() {
     'p-2',
     'text-green',
     'border-green',
-    'hover:bg-green/[.06]'
+    'hover:bg-green/[.06]',
+    generalTransition
   )
 
-  const contactLineClass = classNames('flex', 'items-center', 'gap-2')
+  const contactLineClass = classNames(
+    'flex',
+    'items-center',
+    'gap-2',
+    'hover:text-green',
+    generalTransition
+  )
 
   const contactIconClass = classNames('text-green', 'text-xl')
 

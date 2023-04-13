@@ -4,6 +4,7 @@ import { BsGithub, BsWhatsapp } from 'react-icons/bs'
 import { FiMail } from 'react-icons/fi'
 import { SiNotion } from 'react-icons/si'
 import linksURLs from '../constants/hyperlinks'
+import generalTransition from './classnames/classNames'
 
 export default function SidebarContacts() {
   const contactsContainerClass = classNames(
@@ -19,12 +20,14 @@ export default function SidebarContacts() {
     'ml-2'
   )
 
-  const contactsListClass = classNames('flex', 'flex-col', 'gap-2')
+  const contactsListClass = classNames('flex', 'flex-col', 'gap-3')
 
   const contactsListItemClass = classNames(
     'text-2xl',
     'text-frg2',
-    'hover:text-green'
+    'hover:text-green',
+    generalTransition,
+    'hover:animate-float'
   )
   const contactsLineClass = classNames(
     'border-r',
