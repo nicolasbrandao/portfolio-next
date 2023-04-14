@@ -2,8 +2,8 @@ import classNames from 'classnames'
 import { MdOutlineFileDownload } from 'react-icons/md'
 import { Ubuntu_Mono } from 'next/font/google'
 import linksURLs from '../constants/hyperlinks'
-import Paper from './Paper'
-import Button from './Button'
+import Paper from './common/Paper'
+import Button from './common/Button'
 
 const ubuntuMono = Ubuntu_Mono({ weight: '400', subsets: ['latin'] })
 
@@ -55,7 +55,7 @@ export default function Hero() {
         </p>
         <Button href={linksURLs.resume}>
           <span>Download Currículo</span>
-          <MdOutlineFileDownload className={iconClass} />
+          <MdOutlineFileDownload className={iconClass} aria-hidden="true" />
         </Button>
       </div>
     </Paper>

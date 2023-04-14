@@ -1,8 +1,8 @@
 import classNames from 'classnames'
 import { Project } from '@/types'
 import projectsData from '../constants/projectsData'
-import Paper from './Paper'
-import TitleHeader from './TitleHeader'
+import Paper from './common/Paper'
+import TitleHeader from './common/TitleHeader'
 import ProjectContainer from './ProjectContainer'
 
 export default function Projects() {

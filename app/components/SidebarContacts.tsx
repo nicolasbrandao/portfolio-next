@@ -40,28 +40,53 @@ export default function SidebarContacts() {
     <div className={contactsContainerClass}>
       <ul className={contactsListClass}>
         <li className={contactsListItemClass}>
-          <a href={linksURLs.email} target="_blank" rel="noreferrer">
+          <a
+            href={linksURLs.email}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Email"
+          >
             <FiMail />
           </a>
         </li>
         <li className={contactsListItemClass}>
-          <a href={linksURLs.whatsapp} target="_blank" rel="noreferrer">
+          <a
+            href={linksURLs.whatsapp}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Whatsapp"
+          >
             <BsWhatsapp />
           </a>
         </li>
         <li className={contactsListItemClass}>
-          <a href={linksURLs.linkedin} target="_blank" rel="noreferrer">
+          <a
+            href={linksURLs.linkedin}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="LinkedIn"
+          >
             <SlSocialLinkedin />
           </a>
         </li>
         <li className={contactsListItemClass}>
-          <a href={linksURLs.github} target="_blank" rel="noreferrer">
+          <a
+            href={linksURLs.github}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Github"
+          >
             <BsGithub />
           </a>
         </li>
 
         <li className={contactsListItemClass}>
-          <a href={linksURLs.notion} target="_blank" rel="noreferrer">
+          <a
+            href={linksURLs.notion}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Notion"
+          >
             <SiNotion />
           </a>
         </li>

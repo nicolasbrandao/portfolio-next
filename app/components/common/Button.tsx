@@ -1,6 +1,6 @@
 import classNames from 'classnames'
 import { ReactNode } from 'react'
-import generalTransition from './classnames/classNames'
+import generalTransition from '../classnames/classNames'
 
 type Props = {
   href: string
@@ -22,7 +22,13 @@ export default function Button({ href, children }: Props) {
     generalTransition
   )
   return (
-    <a href={href} className={buttonClass} target="_blank" rel="noreferrer">
+    <a
+      href={href}
+      className={buttonClass}
+      target="_blank"
+      rel="noreferrer"
+      tabIndex={0}
+    >
       {children}
     </a>
   )

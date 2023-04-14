@@ -28,7 +28,7 @@ export default function TitleHeader({ children }: PropsWithChildren) {
 
   return (
     <div className={titleContainerClass}>
-      <p className={titleClass}>{children}</p>
+      <h1 className={titleClass}>{children}</h1>
       <div className={dividerClass} />
     </div>
   )

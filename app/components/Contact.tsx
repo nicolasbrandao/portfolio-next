@@ -6,8 +6,8 @@ import classNames from 'classnames'
 import { FiSend } from 'react-icons/fi'
 import { HiOutlineMail } from 'react-icons/hi'
 import { FaWhatsapp, FaLinkedinIn } from 'react-icons/fa'
-import TitleHeader from './TitleHeader'
-import Paper from './Paper'
+import TitleHeader from './common/TitleHeader'
+import Paper from './common/Paper'
 import linksURLs from '../constants/hyperlinks'
 import generalTransition from './classnames/classNames'
 
@@ -113,7 +113,9 @@ export default function Contact() {
       <TitleHeader>Contato</TitleHeader>
       <div className={contactContainerClass}>
         <form ref={form} onSubmit={sendEmail} className={formClass}>
-          <p className={alertMessageClass}>Mensagem enviada com sucesso!</p>
+          <p className={alertMessageClass} aria-live="polite">
+            Mensagem enviada com sucesso!
+          </p>
           <h3 className={headingLineCLas}>Envie uma mensagem</h3>
           <label htmlFor="name">
             Nome

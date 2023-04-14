@@ -3,8 +3,8 @@
 import classNames from 'classnames'
 import { FiMenu } from 'react-icons/fi'
 import { useState, useEffect, useRef } from 'react'
-import Button from './Button'
-import Brand from './Brand'
+import Button from './common/Button'
+import Brand from './common/Brand'
 import ThemeIcon from './ThemeIcon'
 import linksURLs from '../constants/hyperlinks'
 import generalTransition from './classnames/classNames'
@@ -93,7 +93,11 @@ export default function Navbar() {
     <nav className={navbarClass}>
       <Brand />
       <div className={sideMenuClass}>
-        <FiMenu className={mobileMenuIconClass} onClick={handleClick} />
+        <FiMenu
+          className={mobileMenuIconClass}
+          onClick={handleClick}
+          aria-label="Mobile menu icon"
+        />
         <ul ref={ulRef} className={navbarListClass}>
           <li className={navbarListItemClass}>
             <ThemeIcon />

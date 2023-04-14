@@ -1,10 +1,10 @@
 import classNames from 'classnames'
 import { FiExternalLink } from 'react-icons/fi'
-import Paper from './Paper'
-import TitleHeader from './TitleHeader'
-import Paragraph from './Paragraph'
+import Paper from './common/Paper'
+import TitleHeader from './common/TitleHeader'
+import Paragraph from './common/Paragraph'
 import SkillsIcons from './SkillsIcons'
-import Button from './Button'
+import Button from './common/Button'
 import linksURLs from '../constants/hyperlinks'
 
 export default function Skills() {
@@ -29,7 +29,7 @@ export default function Skills() {
           <SkillsIcons />
           <Button href={linksURLs.notion}>
             Acesse meu Notion
-            <FiExternalLink />
+            <FiExternalLink aria-hidden="true" />
           </Button>
         </div>
       </div>

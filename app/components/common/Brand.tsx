@@ -14,7 +14,7 @@ export default function Brand() {
   )
 
   return (
-    <a href="/" className={brandClass}>
+    <a href="/" className={brandClass} tabIndex={0} aria-label="Brand">
       NB
     </a>
   )
