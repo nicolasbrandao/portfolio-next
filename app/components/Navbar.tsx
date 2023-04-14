@@ -2,7 +2,7 @@
 
 import classNames from 'classnames'
 import { FiMenu } from 'react-icons/fi'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Button from './Button'
 import Brand from './Brand'
 import ThemeIcon from './ThemeIcon'
@@ -11,6 +11,7 @@ import generalTransition from './classnames/classNames'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
+  const ulRef = useRef<HTMLUListElement | null>(null)
 
   useEffect(() => {
     const handleWindowResize = () => {
@@ -28,6 +29,19 @@ export default function Navbar() {
   const handleClick = () => {
     setIsOpen((prev) => !prev)
   }
+
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (!ulRef.current || !ulRef.current?.contains(e.target as Node)) {
+        setIsOpen(false)
+      }
+    }
+
+    document.addEventListener('click', handleClickOutside)
+    return () => {
+      document.removeEventListener('click', handleClickOutside)
+    }
+  }, [isOpen, ulRef])
 
   const navbarClass = classNames(
     'flex',
@@ -80,7 +94,7 @@ export default function Navbar() {
       <Brand />
       <div className={sideMenuClass}>
         <FiMenu className={mobileMenuIconClass} onClick={handleClick} />
-        <ul className={navbarListClass}>
+        <ul ref={ulRef} className={navbarListClass}>
           <li className={navbarListItemClass}>
             <ThemeIcon />
           </li>
