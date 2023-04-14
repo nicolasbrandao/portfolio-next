@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 import { ReactNode } from 'react'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import PreLoader from './components/PreLoader'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,6 +22,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <Navbar />
         {children}
         <Footer />
+        <PreLoader />
       </body>
     </html>
   )

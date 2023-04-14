@@ -21,9 +21,14 @@ module.exports = {
           "0%, 100%": { transform: "translateY(0px)" },
           "50%": { transform: "translateY(-10px)" },
         },
+        strokeDash: {
+          "0%": { "stroke-dasharray": "0 50%" },
+          "100%": { "stroke-dasharray": "50% 0" },
+        }
       },
       animation: {
         float: 'float 1.5s ease-in-out infinite',
+        strokeDash: 'strokeDash 2s ease-in-out'
       }
     },
   },
