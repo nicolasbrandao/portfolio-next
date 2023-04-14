@@ -21,7 +21,7 @@ const projectsData: Project[] = [
     title: 'Portfólio',
     description:
       'Projeto de uma página de portfólio pessoal para exposição de projetos e currículo',
-    technologies: 'React Next TypeScript Tailwind',
+    technologies: 'React Next TypeScript Tailwind FramerMotion',
   },
 ]
 
