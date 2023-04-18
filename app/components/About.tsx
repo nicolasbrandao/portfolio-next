@@ -40,7 +40,8 @@ export default function About() {
         <div className={bodyClass}>
           <div className={textContainerClass}>
             <Paragraph>
-              Atualmente, trabalho na equipe de desenvolvimento e mentoria de projetos da comunidade PodCodar
+              Atualmente, trabalho na equipe de desenvolvimento e mentoria de
+              projetos da comunidade PodCodar
             </Paragraph>
             <Paragraph>
               Já trabalhei em projetos desafiadores e aprendi muito com
