@@ -40,8 +40,7 @@ export default function About() {
         <div className={bodyClass}>
           <div className={textContainerClass}>
             <Paragraph>
-              Sou um desenvolvedor front-end que trabalha principalmente com
-              React, Redux e TypeScript
+              Atualmente, trabalho na equipe de desenvolvimento e mentoria de projetos da comunidade PodCodar
             </Paragraph>
             <Paragraph>
               Já trabalhei em projetos desafiadores e aprendi muito com

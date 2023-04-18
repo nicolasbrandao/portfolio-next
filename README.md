@@ -1,38 +1,72 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🚧 Personal Portfolio Page
 
-## Getting Started
+<p align="center">
+  <a href="#-description">Description</a>&nbsp;|&nbsp;
+  <a href="#-deploy">Deploy</a>&nbsp;|&nbsp;
+  <a href="#-tech-stack">Tech Stack</a>&nbsp;|&nbsp;
+  <a href="#-install-and-scripts">Install & Scripts</a>&nbsp;|&nbsp;
+  <a href="#-contribution">Contribution</a>&nbsp;|&nbsp;
+  <a href="#-license">License</a>
+</p>
 
-First, run the development server:
+<br>
 
+<p align="center">
+  <img alt="Portfolio Thumbnail" src="./public/projects/portfolio.png" width="100%" />
+</p>
+
+
+## 📙 Description
+
+This is a personal portfolio web page to display professional projects, skills and experiences. This page was built primarily with Next and TypeScript
+
+
+## 💻 Deploy
+
+- [Click here](https://nicolasbrandao.vercel.app/) to go to a Vercel deploy of this app
+
+
+## 🛠 Tech Stack
+
+- Next
+    - React
+        - React Icons
+    - TypeScript
+- Tailwind
+    - Classnames
+- ESLint & Prettier
+    - Airbnb JavaScript Style Guidelines
+
+
+## 👨‍💻 Install and Scripts
+
+Install dependecies:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+  npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Run local server:
+```bash
+  npm run dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Format files with Airbnb JavaScript Style Guidelines:
+```bash
+  npm run format
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Create build for deploying:
+```bash
+  npm run build
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 👥 Contribution
 
-## Learn More
+If you'd like to contribute with to project, simply open up a Pull Request.
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🔑 License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+[MIT](https://choosealicense.com/licenses/mit/)
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
