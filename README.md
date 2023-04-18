@@ -31,6 +31,7 @@ This is a personal portfolio web page to display professional projects, skills a
 - Next
     - React
         - React Icons
+        - Framer Motion
     - TypeScript
 - Tailwind
     - Classnames
