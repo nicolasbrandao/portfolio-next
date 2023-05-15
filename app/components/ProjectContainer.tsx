@@ -20,6 +20,7 @@ export default function ProjectContainer({ project }: ProjectProp) {
         alt={project.title}
         height={350}
         className={projectImageClass}
+        quality={100}
       />
       <ProjectCard project={project} />
     </div>
