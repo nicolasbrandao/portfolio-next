@@ -10,7 +10,8 @@ export default function Projects() {
     'flex',
     'flex-col',
     'my-auto',
-    'gap-16'
+    'gap-16',
+    'pt-20'
   )
   return (
     <Paper id="projects">
