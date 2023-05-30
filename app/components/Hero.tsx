@@ -49,7 +49,7 @@ export default function Hero() {
         <p className={myNameClass}>Nícolas Brandão</p>
         <p className={titleClass}>Sou engenheiro de software</p>
         <p>
-          Constantemente melhorarando minha habilidade em construir para a web.
+          Constantemente melhorando minha habilidade em construir para a web.
           Uso principalmente React, Redux, Next e TypeScript para desenvolver
           boas experiências para o usuário e mantenedores do código
         </p>
