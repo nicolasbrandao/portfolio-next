@@ -15,7 +15,7 @@ const projectsData: Project[] = [
     description:
       'ESTE É UM TRABALHO EM ANDAMENTO. Projeto de web app interno da comunidade PodCodar. Funcionalidades de inscrição, registro e onboarding de novos mentorados.',
     technologies:
-      'Next TypeScript NextAuth Prisma Docker Tailwind-Styled-Componentes Zod',
+      'Next TypeScript NextAuth Prisma Docker Tailwind-Styled-Components Zod',
   },
   {
     id: 'tucuna-records',
