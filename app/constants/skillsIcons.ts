@@ -11,6 +11,10 @@ const icons = [
   { id: 'SiGit', title: 'Git' },
   { id: 'SiPython', title: 'Python' },
   { id: 'SiDjango', title: 'Django' },
+  { id: 'SiFlask', title: 'Flask' },
+  { id: 'SiPostgresql', title: 'Postgresql' },
+  { id: 'SiPrisma', title: 'Prisma' },
+  { id: 'SiDocker', title: 'Docker' },
 ]
 
 export default icons

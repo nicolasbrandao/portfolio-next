@@ -12,6 +12,10 @@ import {
   SiGit,
   SiPython,
   SiDjango,
+  SiDocker,
+  SiPrisma,
+  SiPostgresql,
+  SiFlask,
 } from 'react-icons/si'
 import { Ubuntu_Mono } from 'next/font/google'
 import icons from '../constants/skillsIcons'
@@ -23,6 +27,8 @@ export default function SkillsIcons() {
     <SiReact name="SiReact" />,
     <SiRedux name="SiRedux" />,
     <SiNextdotjs name="SiNextdotjs" />,
+    <SiDocker name="SiDocker" />,
+    <SiPrisma name="SiPrisma" />,
     <SiTypescript name="SiTypescript" />,
     <SiStyledcomponents name="SiStyledcomponents" />,
     <SiTailwindcss name="SiTailwindcss" />,
@@ -30,9 +36,12 @@ export default function SkillsIcons() {
     <SiHtml5 name="SiHtml5" />,
     <SiCss3 name="SiCss3" />,
     <SiGit name="SiGit" />,
+    <SiPostgresql name="SiPostgresql" />,
     <SiPython name="SiPython" />,
     <SiDjango name="SiDjango" />,
+    <SiFlask name="SiFlask" />,
   ]
+
   const containerClass = classNames('flex', 'flex-wrap')
 
   const skillCardClass = classNames(
