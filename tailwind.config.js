@@ -1,9 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./app/**/*.{js,ts,jsx,tsx}",
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
+    './app/**/*.{js,ts,jsx,tsx}',
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     colors: {
@@ -18,18 +18,18 @@ module.exports = {
     extend: {
       keyframes: {
         float: {
-          "0%, 100%": { transform: "translateY(0px)" },
-          "50%": { transform: "translateY(-10px)" },
+          '0%, 100%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-10px)' },
         },
         strokeDash: {
-          "0%": { "stroke-dasharray": "0 50%" },
-          "100%": { "stroke-dasharray": "50% 0" },
-        }
+          '0%': { 'stroke-dasharray': '0 50%' },
+          '100%': { 'stroke-dasharray': '50% 0' },
+        },
       },
       animation: {
         float: 'float 1.5s ease-in-out infinite',
-        strokeDash: 'strokeDash 2s ease-in-out'
-      }
+        strokeDash: 'strokeDash 2s ease-in-out',
+      },
     },
   },
   plugins: [],
