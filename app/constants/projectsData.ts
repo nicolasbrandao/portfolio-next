@@ -1,9 +1,32 @@
 import { Project } from '@/types'
+import TucunaRecords from '../../public/projects/tucuna-records.png'
+import Podcodar from '../../public/projects/podcodar.png'
 import FakeStoreThumbnail from '../../public/projects/fakestore.png'
 import GamerShelfThumbnail from '../../public/projects/gamer-shelf.png'
 import PortfolioThumbnail from '../../public/projects/portfolio.png'
 
 const projectsData: Project[] = [
+  {
+    id: 'podcodar',
+    image: Podcodar,
+    repoURL: 'https://github.com/podcodar/app',
+    deployURL: 'https://app-podcodar.vercel.app/login',
+    title: 'PodCodar App',
+    description:
+      'ESTE É UM TRABALHO EM ANDAMENTO. Projeto de web app interno da comunidade PodCodar. Funcionalidades de inscrição, registro e onboarding de novos mentorados.',
+    technologies:
+      'Next TypeScript NextAuth Prisma Docker Tailwind-Styled-Componentes Zod',
+  },
+  {
+    id: 'tucuna-records',
+    image: TucunaRecords,
+    repoURL: 'https://github.com/nicolasbrandao/tucuna-records',
+    deployURL: 'https://tucuna-records.vercel.app/',
+    title: 'Tucuna Records',
+    description:
+      'ESTE É UM TRABALHO EM ANDAMENTO. Projeto de web app para homologação de records de pesca esportiva de tucunarés',
+    technologies: 'Next NextAuth Prisma Docker TypeScript Tailwind',
+  },
   {
     id: 'fake-store',
     image: FakeStoreThumbnail,
