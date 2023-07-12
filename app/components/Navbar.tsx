@@ -9,6 +9,34 @@ import ThemeIcon from './ThemeIcon'
 import linksURLs from '../constants/hyperlinks'
 import generalTransition from './classnames/classNames'
 
+const navbarLinks = [
+  {
+    key: 'home',
+    href: '#home',
+    title: 'Home',
+  },
+  {
+    key: 'about',
+    href: '#about',
+    title: 'Sobre mim',
+  },
+  {
+    key: 'skills',
+    href: '#skills',
+    title: 'Skills',
+  },
+  {
+    key: 'projects',
+    href: '#projects',
+    title: 'Projetos',
+  },
+  {
+    key: 'contact',
+    href: '#contact',
+    title: 'Contato',
+  },
+]
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const ulRef = useRef<HTMLUListElement | null>(null)
@@ -102,21 +130,11 @@ export default function Navbar() {
           <li className={navbarListItemClass}>
             <ThemeIcon />
           </li>
-          <li className={navbarListItemClass}>
-            <a href="#home">Home</a>
-          </li>
-          <li className={navbarListItemClass}>
-            <a href="#about">Sobre mim</a>
-          </li>
-          <li className={navbarListItemClass}>
-            <a href="#skills">Skills</a>
-          </li>
-          <li className={navbarListItemClass}>
-            <a href="#projects">Projetos</a>
-          </li>
-          <li className={navbarListItemClass}>
-            <a href="#contact">Contato</a>
-          </li>
+          {navbarLinks.map((item) => (
+            <li key={item.key} className={navbarListItemClass}>
+              <a href={item.href}>{item.title}</a>
+            </li>
+          ))}
           <li className={navbarListItemClass}>
             <Button href={linksURLs.resume}>Currículo</Button>
           </li>
