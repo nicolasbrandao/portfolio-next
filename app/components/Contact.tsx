@@ -11,9 +11,9 @@ import Paper from './common/Paper'
 import linksURLs from '../constants/hyperlinks'
 import generalTransition from './classnames/classNames'
 
-const contactService = process.env.CONTACT_SERVICE as string
-const contactForm = process.env.CONTACT_FORM as string
-const serviceId = process.env.SERVICE_ID as string
+const contactService = process.env.NEXT_PUBLIC_CONTACT_SERVICE as string
+const contactForm = process.env.NEXT_PUBLIC_CONTACT_FORM as string
+const publicKey = process.env.NEXT_PUBLIC_KEY as string
 
 export default function Contact() {
   const form = useRef<any>(null)
@@ -22,7 +22,7 @@ export default function Contact() {
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
 
-    emailjs.sendForm(contactService, contactForm, form.current, serviceId).then(
+    emailjs.sendForm(contactService, contactForm, form.current, publicKey).then(
       (result) => {
         console.log(result.text)
         setShowAlert(true)
