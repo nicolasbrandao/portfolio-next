@@ -11,6 +11,10 @@ import Paper from './common/Paper'
 import linksURLs from '../constants/hyperlinks'
 import generalTransition from './classnames/classNames'
 
+const contactService = process.env.CONTACT_SERVICE as string
+const contactForm = process.env.CONTACT_FORM as string
+const serviceId = process.env.SERVICE_ID as string
+
 export default function Contact() {
   const form = useRef<any>(null)
   const [showAlert, setShowAlert] = useState(false)
@@ -18,23 +22,16 @@ export default function Contact() {
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
 
-    emailjs
-      .sendForm(
-        'service_lbu1fdx',
-        'template_s98zgqt',
-        form.current,
-        'robA-NOs3BVfzw5O3'
-      )
-      .then(
-        (result) => {
-          console.log(result.text)
-          setShowAlert(true)
-          form.current.reset()
-        },
-        (error) => {
-          console.log(error.text)
-        }
-      )
+    emailjs.sendForm(contactService, contactForm, form.current, serviceId).then(
+      (result) => {
+        console.log(result.text)
+        setShowAlert(true)
+        form.current.reset()
+      },
+      (error) => {
+        console.log(error.text)
+      }
+    )
   }
 
   const contactContainerClass = classNames(
