@@ -116,7 +116,7 @@ export default function Contact() {
           <p className={alertMessageClass} aria-live="polite">
             Mensagem enviada com sucesso!
           </p>
-          <h3 className={headingLineCLas}>Envie uma mensagem</h3>
+          <h1 className={headingLineCLas}>Envie uma mensagem</h1>
           <label htmlFor="name">
             Nome
             <br />
@@ -153,7 +153,7 @@ export default function Contact() {
           </button>
         </form>
         <div>
-          <h3 className={headingLineCLas}>Ou faça contato direto</h3>
+          <h1 className={headingLineCLas}>Ou faça contato direto</h1>
           <a
             href={linksURLs.email}
             className={contactLineClass}
