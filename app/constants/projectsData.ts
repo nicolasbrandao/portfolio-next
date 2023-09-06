@@ -8,17 +8,6 @@ import TaskManager from '@/public/projects/task-manager.png'
 
 const projectsData: Project[] = [
   {
-    id: 'podcodar',
-    image: Podcodar,
-    repoURL: 'https://github.com/podcodar/app',
-    deployURL: 'https://app-podcodar.vercel.app/login',
-    title: 'PodCodar App',
-    description:
-      'ESTE É UM TRABALHO EM ANDAMENTO. Projeto de web app interno da comunidade PodCodar. Funcionalidades de inscrição, registro e onboarding de novos mentorados',
-    technologies:
-      'Next TypeScript NextAuth Prisma Docker Tailwind-Styled-Components Zod',
-  },
-  {
     id: 'task-manager',
     image: TaskManager,
     repoURL: 'https://github.com/nicolasbrandao/task-manager',
@@ -28,6 +17,17 @@ const projectsData: Project[] = [
       'Crie, edite e busque tarefas, armazenando tudo em um banco de dados!',
     technologies:
       'Vite React TypeScript RTKQuery ReactHookForm ReactRouter Zod LodashDebounce MaterialUI AceBase Express',
+  },
+  {
+    id: 'podcodar',
+    image: Podcodar,
+    repoURL: 'https://github.com/podcodar/app',
+    deployURL: 'https://app-podcodar.vercel.app/login',
+    title: 'PodCodar App',
+    description:
+      'ESTE É UM TRABALHO EM ANDAMENTO. Projeto de web app interno da comunidade PodCodar. Funcionalidades de inscrição, registro e onboarding de novos mentorados',
+    technologies:
+      'Next TypeScript NextAuth Prisma Docker Tailwind-Styled-Components Zod',
   },
   {
     id: 'tucuna-records',
