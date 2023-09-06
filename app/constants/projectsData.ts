@@ -1,9 +1,10 @@
 import { Project } from '@/types'
-import TucunaRecords from '../../public/projects/tucuna-records.png'
-import Podcodar from '../../public/projects/podcodar.png'
-import FakeStoreThumbnail from '../../public/projects/fakestore.png'
-import GamerShelfThumbnail from '../../public/projects/gamer-shelf.png'
-import PortfolioThumbnail from '../../public/projects/portfolio.png'
+import TucunaRecords from '@/public/projects/tucuna-records.png'
+import Podcodar from '@/public/projects/podcodar.png'
+import FakeStoreThumbnail from '@/public/projects/fakestore.png'
+import GamerShelfThumbnail from '@/public/projects/gamer-shelf.png'
+import PortfolioThumbnail from '@/public/projects/portfolio.png'
+import TaskManager from '@/public/projects/task-manager.png'
 
 const projectsData: Project[] = [
   {
@@ -16,6 +17,17 @@ const projectsData: Project[] = [
       'ESTE É UM TRABALHO EM ANDAMENTO. Projeto de web app interno da comunidade PodCodar. Funcionalidades de inscrição, registro e onboarding de novos mentorados',
     technologies:
       'Next TypeScript NextAuth Prisma Docker Tailwind-Styled-Components Zod',
+  },
+  {
+    id: 'task-manager',
+    image: TaskManager,
+    repoURL: 'https://github.com/nicolasbrandao/task-manager',
+    deployURL: 'https://task-manager-nicolasbrandao.vercel.app/',
+    title: 'Task Manager',
+    description:
+      'Crie, edite e busque tarefas, armazenando tudo em um banco de dados!',
+    technologies:
+      'Vite React TypeScript RTKQuery ReactHookForm ReactRouter Zod LodashDebounce MaterialUI AceBase Express',
   },
   {
     id: 'tucuna-records',
