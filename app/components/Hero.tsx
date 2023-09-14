@@ -47,7 +47,7 @@ export default function Hero() {
       <div className={heroContainerClass}>
         <p className={greetingClass}>Olá, meu nome é</p>
         <p className={myNameClass}>Nícolas Brandão</p>
-        <p className={titleClass}>Sou engenheiro de software</p>
+        <p className={titleClass}>Sou Desenvolvedor Full-stack</p>
         <p>
           Constantemente melhorando minha habilidade em construir para a web.
           Uso principalmente React, Redux, Next e TypeScript para desenvolver
